@@ -11,9 +11,9 @@ const About = () => {
             <div className='col-span-2'>
                 <p className='uppercase text-xl tracking-widest text-[#34A6A7]'>About</p>
                 <h2 className='py-4'>Who I Am</h2>
-                <p className='py-2 text-gray-600'>/ / I am not your average developer</p>
+                <p className='py-2 text-gray-600'>/ / I am not your normal developer</p>
                 <p className='py-2 text-gray-600'>
-            I have spent my few months working as a production engineer after graduated as a mechanical engineer in 2021. At this time, I found myself in a position where I was not find interest in the field mechanical engineering but I was interested in the field of software development. So, I decided to take the opportunity to learn and develop my skills in the field of software development. I started exploring HTML and css in 2021 and I was immediately hooked. 
+            I have spent my few months working as a production engineer after graduated as a mechanical engineer in 2021. At this time, I found myself in a position where I was not find interest in the field mechanical engineering but I was interested in the field of software development. So, I decided to take the opportunity to learn and develop my skills in the field of software development. I started exploring HTML and CSS in 2021 and I was immediately hooked. 
           </p>
           <p className='py-2 text-gray-600'>
             Fascinated with how intricate programming can be I was quickly drawn
@@ -26,7 +26,7 @@ const About = () => {
             </p>
             </div>
             <div className='w-full h-auto m-auto shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-                <Image className='rounded-xl' src={AboutImg} alt="/" />
+                <Image className='rounded-full' src={AboutImg} alt="/" width={400} height={400} />
             </div>
         </div>
     </div>
