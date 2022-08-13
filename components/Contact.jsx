@@ -7,6 +7,8 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../public/assets/contact.jpg'
+// import emailjs from "@emailjs/browser";
+// import Router from 'next/router'
 
 
 
@@ -81,37 +83,32 @@ const Contact = () => {
                 <div className='col-span-3  w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
                     <div className='p-4'>
 
-                        <form 
-                        action='https://getform.io/f/02b54eab-9bdc-45a1-96d0-69c12df87619'
-                        method='POST'
-                        >
+                        <form action='https://getform.io/f/02b54eab-9bdc-45a1-96d0-69c12df87619' method="POST" encType="multipart/form-data">
                             <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                                 <div className='flex flex-col'>
-                                    <label htmlFor='name' className='uppercase text-sm py-2'>Name</label>
-                                    <input type='text' id='name' className='border-2 rounded-lg p-3 flex border-gray-300'/>
+                                    <label  className='uppercase text-sm py-2'>Name</label>
+                                    <input type='text' name='name' className='border-2 rounded-lg p-3 flex border-gray-300'/>
 
 
                                 </div>
                                 <div className='flex flex-col'>
-                                    <label htmlFor='phone-number' className='uppercase text-sm py-2'>Phone Number</label>
-                                    <input type='text' id='phone-number' className='border-2 rounded-lg p-3 flex border-gray-300'/>
-
-
+                                    <label className='uppercase text-sm py-2'>Phone Number</label>
+                                    <input type='text' name='phone' className='border-2 rounded-lg p-3 flex border-gray-300'/>
                                 </div>
 
                             </div>
 
                             <div className='flex flex-col py-2'>
-                            <label htmlFor='email' className='uppercase text-sm py-2'>Email</label>
-                            <input type='email' id='email' className='border-2 rounded-lg p-3 flex border-gray-300'/>
+                            <label className='uppercase text-sm py-2'>Email</label>
+                            <input type='email' name='email' className='border-2 rounded-lg p-3 flex border-gray-300'/>
                             </div>
                             <div className='flex flex-col py-2'>
-                            <label htmlFor='subject' className='uppercase text-sm py-2'>Subject</label>
-                            <input type='text' id='subject' className='border-2 rounded-lg p-3 flex border-gray-300'/>
+                            <label  className='uppercase text-sm py-2'>Subject</label>
+                            <input type='text' name='subject' className='border-2 rounded-lg p-3 flex border-gray-300'/>
                             </div>
                             <div className='flex flex-col py-2'>
-                            <label htmlFor='subject' className='uppercase text-sm py-2'>Message</label>
-                            <textarea className='border-2 rounded-lg p-3 flex border-gray-300'rows="10"></textarea>
+                            <label className='uppercase text-sm py-2'>Message</label>
+                            <textarea rows='10' name='message' className='border-2 rounded-lg p-3 flex border-gray-300'></textarea>
                             </div>
 
                             <button className='w-full p-4 text-gray-100 mt-4'>
