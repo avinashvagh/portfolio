@@ -3,10 +3,8 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
-import propertyImg from '../public/assets/projects/property.jpg'
-import cryptoImg from '../public/assets/projects/crypto.jpg'
-import netflixImg from '../public/assets/projects/netflix.jpg'
-import twitchImg from '../public/assets/projects/twitch.jpg'
+import projectImg from '../public/assets/projects/dummyProject.jpg'
+
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -20,35 +18,35 @@ const Projects = () => {
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
             title='Social Network App'
-            backgroundImg={propertyImg}
-            projectUrl='/property'
+            backgroundImg={projectImg}
+            projectUrl='/socialnetwork'
             tech='Node.js, Express, React, Redux and MongoDB along with ES6+'
           />
           <ProjectItem
             title='GitHub Finder'
-            backgroundImg={cryptoImg}
-            projectUrl='/crypto'
+            backgroundImg={projectImg}
+            projectUrl='/githubfinder'
             tech='React JS, Tailwind &#38; Daisy UI'
 
           />
           <ProjectItem
             title='House Marketplace'
-            backgroundImg={netflixImg}
-            projectUrl='/netflix'
+            backgroundImg={projectImg}
+            projectUrl='/housemarketplace'
             tech='React JS, Firebase '
 
           />
           <ProjectItem
-            title='fullstack MERN Support Ticket System'
-            backgroundImg={twitchImg}
-            projectUrl='/twitch'
+            title='Support Ticket System'
+            backgroundImg={projectImg}
+            projectUrl='/supportticketsystem'
             tech='MongoDB, Express, React.js, Node.js, Redux and Redux Toolkit'
 
           />
           <ProjectItem
             title='YelpCamp'
-            backgroundImg={twitchImg}
-            projectUrl='/twitch'
+            backgroundImg={projectImg}
+            projectUrl='/yelpcamp'
             tech='MongoDB, Express, Node.js, JavaScript, CSS'
 
           />

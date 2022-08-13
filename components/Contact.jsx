@@ -13,7 +13,7 @@ import ContactImg from '../public/assets/contact.jpg'
 
 const Contact = () => {
   return (
-    <div className='w-full lg:h-screen '>
+    <div id="contact" className='w-full lg:h-screen '>
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
             <p className='text-sl tracking-widest uppercase text-[#34a6a7]'>
                 Contact
@@ -91,7 +91,7 @@ const Contact = () => {
                                 </div>
                                 <div className='flex flex-col'>
                                     <label htmlFor='phone-number' className='uppercase text-sm py-2'>Phone Number</label>
-                                    <input type='number' id='phone-number' className='border-2 rounded-lg p-3 flex border-gray-300'/>
+                                    <input type='text' id='phone-number' className='border-2 rounded-lg p-3 flex border-gray-300'/>
 
 
                                 </div>
